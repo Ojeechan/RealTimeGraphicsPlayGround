@@ -4,6 +4,7 @@ This project is a playground to experiment with various graphics techniques free
 The program is scaffolded from some tutorials:
 - Vulkan Tutorial: https://vulkan-tutorial.com/
 - NVIDIA Vulkan Ray Tracing Tutorial: https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR
+- Ray Tracing in One Weekend: https://raytracing.github.io/books/RayTracingInOneWeekend.html
 
 # Explored Topics
 - Vulkan
