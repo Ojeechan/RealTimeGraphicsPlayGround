@@ -1,0 +1,71 @@
+{
+	"modelDir": "models",
+	"textureDir": "textures",
+	"characters": [
+		{
+			"model": "dragon.obj",
+			"textures": {
+				"albedo": "dragon_albedo.png",
+				"normal": "teapot_normal.png",
+				"material": "high_metal_high_rough.png"
+			},
+			"position": [0.0, 1.0, 0.0],
+			"direction": [0.0, 0.0, -1.0]
+		}
+	],
+	"props": [
+		{
+			"model": "monkey.obj",
+			"textures": {
+				"albedo": "monkey_albedo.png",
+				"normal": "teapot_normal.png",
+				"material": "high_metal_low_rough.png"
+			},
+			"position": [-1.0, 1.0, 0.0],
+			"direction": [1.0, 0.0, 0.0]
+		},
+		{
+			"model": "ground.obj",
+			"textures": {
+				"albedo": "ground_albedo.png",
+				"normal": "teapot_normal.png",
+				"material": "low_metal_high_rough.png"
+			},
+			"position": [0.0, 0.0, 0.0],
+			"direction": [1.0, 0.0, 0.0]
+		}
+	],
+	"cameras": [
+		{
+			"position": [0.0, 0.0, 10.0],
+			"center": [0.0, 0.0, 0.0],
+			"up": [0.0, 1.0, 0.0]
+		},
+		{
+			"position": [10.0, 0.0, 0.0],
+			"center": [0.0, 0.0, 0.0],
+			"up": [0.0, 1.0, 0.0]
+		}
+	],
+	"lights": {
+		"point": [
+			{
+				"position": [-2.0, 4.0, 0.0],
+				"intensity": 5.0,
+				"color": [1.0, 1.0, 1.0]
+			}
+		],
+		"directional": [
+			{
+				"direction": [1.0, -1.0, -1.0],
+				"intensity": 10.0,
+				"color": [1.0, 1.0, 1.0]
+			},
+			{
+				"direction": [-1.0, -1.0, -1.0],
+				"intensity": 10.0,
+				"color": [1.0, 1.0, 1.0]
+			}
+		]
+	}
+}
