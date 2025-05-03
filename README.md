@@ -9,7 +9,7 @@ The program is scaffolded from some tutorials:
 # Entry Point
 The application starts at [src/main.cpp](https://github.com/Ojeechan/RealTimeGraphicsPlayground/blob/develop/src/main.cpp).
 
-If you're interested in the code, feel free to start from there.
+If you're interested in the code, feel free to reference from there.
 
 # Explored Topics
 - Vulkan
