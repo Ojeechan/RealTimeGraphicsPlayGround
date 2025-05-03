@@ -6,17 +6,36 @@ The program is scaffolded from some tutorials:
 - NVIDIA Vulkan Ray Tracing Tutorial: https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR
 - Ray Tracing in One Weekend: https://raytracing.github.io/books/RayTracingInOneWeekend.html
 
+# Entry Point
+The application starts at [src/main.cpp](https://github.com/Ojeechan/RealTimeGraphicsPlayground/blob/develop/src/main.cpp).
+
+If you're interested in the code, feel free to start from there.
+
 # Explored Topics
 - Vulkan
 - Vulkan Ray Tracing
 - C++
 - ImGUI
 - Crude Asset Loader (a simple, rough one)
+- Dynamic Pipeline Switching
 - Forward Rendering
 - Deferred Rendering
 - Shadow Mapping
 - Pixelize Shader
 - Real-Time Ray Tracing in One Weekend
+
+## Scene Examples
+### Forward Rendering
+![Forward Rendering](docs/images/forward.png)
+
+### Deferred Rendering and Shadow Mapping
+![Deferred Rendering and Shadow Mapping](docs/images/deferred_shadowmapping.png)
+
+### Pixelize Shader
+![Pixelize Shader](docs/images/pixelize.png)
+
+### Real-Time Ray Tracing in One Weekend
+![Real-Time Ray Tracing in One Weekend](docs/images/realtime_rtow.png)
 
 # Things To Explore
 - Continuous Improvements
@@ -26,6 +45,7 @@ The program is scaffolded from some tutorials:
 	- Ray Tracing Optimization
 	- Rendering Pipeline Architecture
 - Graphics API Abstraction (OpenGL, DirectX)
+- Hybrid Rendering (Rasterization and Ray Tracing)
 - Jittered Rendering
 - IBR
 - Sky, Weather Rendering
@@ -59,22 +79,27 @@ If not already installed, get it using your preferred method.
 
 https://www.glfw.org/download
 
+## Clone Repository
+```
+git clone https://github.com/Ojeechan/RealTimeGraphicsPlayground.git
+```
+
 ## Build
 ### Windows (using VisualStudio 2022)
 1. Generate build configuration
 ```
-cd VulkanRenderer
+cd RealTimeGraphicsPlayground
 mkdir build
 cd build
 cmake .. -G "Visual Studio 17 2022" -DCMAKE_PREFIX_PATH="path/to/glfw"
 ```
-2. Launch VulkanRenderer/build/VulkanRenderer.sln
-3. Build project `VulkanRenderer` (only Release builds are available for now)
+2. Launch RealTimeGraphicsPlayground/build/RealTimeGraphicsPlayground.sln
+3. Build project `RealTimeGraphicsPlayground` (only Release builds are available for now)
 
 ### Linux (using default generator)
 1. Generate build configuration
 ```
-cd VulkanRenderer
+cd RealTimeGraphicsPlayground
 mkdir build
 cd build
 cmake ..
@@ -86,27 +111,27 @@ cmake --build .
 
 ## Compile Shaders
 ### Windows
-Execute VulkanRenderer/shaders/compile.cmd
+Execute `RealTimeGraphicsPlayground/shaders/compile.cmd`
 
 ### Linux
-Execute VulkanRenderer/shaders/compile.sh
+Execute `RealTimeGraphicsPlayground/shaders/compile.sh`
 
 ## Run Program
 ### Windows
 ```
-cd VulkanRender/bin
-VulkanRenderer.exe
+cd RealTimeGraphicsPlayground/bin
+RTGraphicsApp.exe
 ```
 ### Linux
 ```
-cd VulkanRender/bin
-./VulkanRenderer
+cd RealTimeGraphicsPlayground/bin
+./RTGraphicsApp
 ```
 # Licenses
 
 This project uses the following third-party libraries, each of which has its own license:
 
 - **imgui**: MIT License ([licenses/imgui/LICENSE](licenses/imgui/LICENSE.txt))
-- **nlohmann/json**: MIT License ([Licenses/nlohmann_json/LICENSE](licenses/nlohmann_json/LICENSE.MIT))
+- **nlohmann_json**: MIT License ([Licenses/nlohmann_json/LICENSE](licenses/nlohmann_json/LICENSE.MIT))
 - **stb_image**: MIT License ([Licenses/stb_image/LICENSE](licenses/stb_image/LICENSE))
 - **tiny_obj**: MIT License ([Licenses/stb_image/LICENSE](licenses/tiny_obj/LICENSE))

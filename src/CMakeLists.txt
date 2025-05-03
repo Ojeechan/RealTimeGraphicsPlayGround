@@ -1,5 +1,5 @@
-add_executable(VulkanRenderer "main.cpp")
-target_sources(VulkanRenderer PRIVATE
+add_executable(RTGraphicsApp "main.cpp")
+target_sources(RTGraphicsApp PRIVATE
     "rt_graphics_app.cpp"
     "vulkan_state.cpp"
     "window_state.cpp"
@@ -22,17 +22,17 @@ target_sources(VulkanRenderer PRIVATE
 	"${CMAKE_SOURCE_DIR}/external/imgui/imgui_impl_glfw.cpp"
 )
 
-target_include_directories(VulkanRenderer PRIVATE "${CMAKE_SOURCE_DIR}/include" PRIVATE "${CMAKE_SOURCE_DIR}/external")
+target_include_directories(RTGraphicsApp PRIVATE "${CMAKE_SOURCE_DIR}/include" PRIVATE "${CMAKE_SOURCE_DIR}/external")
 
 find_package(Vulkan REQUIRED)
 find_package(glfw3 REQUIRED)
-target_link_libraries(VulkanRenderer
+target_link_libraries(RTGraphicsApp
     glfw
     Vulkan::Vulkan
 )
 
 if (WIN32)
-    target_compile_definitions(VulkanRenderer PRIVATE VK_USE_PLATFORM_WIN32_KHR)
+    target_compile_definitions(RTGraphicsApp PRIVATE VK_USE_PLATFORM_WIN32_KHR)
 elseif (UNIX)
-    target_compile_definitions(VulkanRenderer PRIVATE VK_USE_PLATFORM_XLIB_KHR)
+    target_compile_definitions(RTGraphicsApp PRIVATE VK_USE_PLATFORM_XLIB_KHR)
 endif()
