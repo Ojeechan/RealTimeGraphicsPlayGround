@@ -72,12 +72,13 @@ If you're interested in the code, feel free to reference from there.
 
 # How To Setup
 
-## Install GLFW
-GLFW is required.
+## Install Vulkan and GLFW
+Vulkan and GLFW is required.
 
 If not already installed, get it using your preferred method.
 
-https://www.glfw.org/download
+Refer to the following for setup instructions:
+https://vulkan-tutorial.com/Development_environment
 
 ## Clone Repository
 ```
