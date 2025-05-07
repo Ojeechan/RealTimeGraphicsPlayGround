@@ -73,7 +73,8 @@ If you're interested in the code, feel free to reference from there.
 # How To Setup
 
 ## Install Vulkan and GLFW
-Vulkan and GLFW is required.
+Vulkan and GLFW are required.
+(Recent versions of the Vulkan SDK include GLM.)
 
 If not already installed, get it using your preferred method.
 
