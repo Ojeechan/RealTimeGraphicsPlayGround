@@ -1,5 +1,5 @@
 # About This Project
-This project is a playground to experiment with various graphics techniques freely.
+This project is a playground to experiment with various real-time graphics techniques freely.
 
 The program is scaffolded from some tutorials:
 - Vulkan Tutorial: https://vulkan-tutorial.com/
