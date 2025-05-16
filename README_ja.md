@@ -6,11 +6,11 @@ C/C++についてもどんどん書く練習をするための場所です。
 リアルタイムグラフィックスを表示するにはどんな要素が必要なのか？という興味に基づき、独学で習得したVulkanを用いて一通り動くところまで実装してみました。
 
 様々な書籍を元に独学中です:
-Real-Time Rendering: https://www.realtimerendering.com/
-Physically Based Rendering (オフライン向け): https://www.pbrt.org/
-Game Engine Architecture: https://www.gameenginebook.com/
-Effective C++シリーズ(C++98/C++03時代からC++11以降まで)
-and more
+- Real-Time Rendering: https://www.realtimerendering.com/
+- Physically Based Rendering (オフライン向け): https://www.pbrt.org/
+- Game Engine Architecture: https://www.gameenginebook.com/
+- Effective C++シリーズ(C++98/C++03時代からC++11以降まで)
+- and more
 
 ## 試してみたトピック
 - 単純なForward RenderingによるGraphics Pipeline
