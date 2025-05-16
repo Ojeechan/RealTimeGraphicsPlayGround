@@ -1,3 +1,5 @@
+([Supplementary document in Japanese/日本語の補足資料](README_ja.md))
+
 # About This Project
 This project is a playground to experiment with various real-time graphics techniques freely.
 
